@@ -1,0 +1,27 @@
+ - = .mdf === [ khi create table hay insert , nói chung thao tác với database sẽ lưu vào file  .mdf ]
+
+ - = .ldf === [ còn file .ldf để ghi lại những thay đổi của databse , roll back lại version trước đó nếu có gì đó  sai xót ] - hay còn gọi là file nhật ký
+
+ - = .bak === [ file bak nén hai file .ldf và .mdf cách để backUp databse ] _ có thể mang mỗi file này sang máy khác để dùng
+
+
+ ----- Cách Back Up , dùng file .bak để back up ---------
+
+1. copy file bak
+
+2. paste vào đường dẫn    [ C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup ]
+   đây đường dẫn này chính là nơi backUp các database
+
+3. vào tools DBMS chuột phải vào database , nhấn restore database 
+
+sau khi restore thành công file .bak sẽ đưa hai file .mdf và .ldf vào thư mục DATA
+         [ C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\DATA ]
+
+
+
+------ Cách tạo ra file .bak ---------
+
+1. click chuột phải vào database cần Back Up -> chọn Task - > chọn Back up -> OK
+  
+ sau đó file back sẽ tự động được tạo ra  trong thư mục [ C:\Program Files\Microsoft SQL Server\MSSQL15.MSSQLSERVER\MSSQL\Backup ]
+ 
